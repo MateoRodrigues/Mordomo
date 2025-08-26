@@ -1,5 +1,6 @@
+from dataclasses import dataclass
+
+@dataclass
 class Service:
-    def __init__(self, name: str):
-        self.name = name
-    def start(self):
-        pass
+    name: str
+    description: str = "No description provided"
