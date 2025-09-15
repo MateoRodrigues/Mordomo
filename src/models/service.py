@@ -4,3 +4,4 @@ from dataclasses import dataclass
 class Service:
     name: str
     description: str = "No description provided"
+    day: weekday

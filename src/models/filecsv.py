@@ -13,4 +13,4 @@ class FileCSV:
     def write_csv(self, data):
         with open(self.filepath, mode='w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
-            writer.writerows(data)
+            writer.writerow(data)
