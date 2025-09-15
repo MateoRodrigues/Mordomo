@@ -1,8 +1,9 @@
 import csv
+import pathlib
 
 class FileCSV:
-    def __init__(self, filepath):
-        self.filepath = filepath
+    def __init__(self):
+        self.filepath = pathlib.Path(__file__).parent/ 'data' / 'tasks.csv'
 
     def read_csv(self):
         with open(self.filepath, mode='r', newline='', encoding='utf-8') as file:
