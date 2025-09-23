@@ -1,9 +1,10 @@
 from models.service import Service
 from models.filecsv import FileCSV
+from datetime import date
 
-Service(str(input("Nome: ")))
-Service.description = str(input("Descrição: "))
-
-
-
+serv = Service(str(input("Nome: ")))
+serv.description = str(input("Descrição: "))
+serv.client = str(input("Cliente: "))
+serv.value = float(input("Valor:R$"))
+serv.migration()
 
