@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from datetime import date
-from models.filecsv import FileCSV
+from repository.filecsv import FileCSV
 
 
 @dataclass

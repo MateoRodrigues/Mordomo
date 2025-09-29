@@ -1,6 +1,6 @@
 import tkinter as tk
 import tkinter.ttk as ttk
-from models.filecsv import FileCSV
+from repository.filecsv import FileCSV
 
 filcsv = FileCSV()
 data, chaves = filcsv.read_csv()
