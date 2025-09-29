@@ -3,11 +3,14 @@ import tkinter.ttk as ttk
 from repository.filecsv import FileCSV
 
 filcsv = FileCSV()
+
+# data é uma lista de dicionários
+# chaves é uma lista com o nome das colunas
 data, chaves = filcsv.read_csv()
 tchaves = tuple()
 for c in chaves:
+    # nome das colunas do csv
     tchaves += (c,)
-print(tchaves)
 for p,r in enumerate(data):
     print(f'{r}')
 root = tk.Tk()
