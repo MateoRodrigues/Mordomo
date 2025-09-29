@@ -8,11 +8,16 @@ class FileCSV:
 
     def read_csv(self):
         with open(self.filepath, mode='r', newline='', encoding='utf-8') as file:
-            reader = csv.reader(file)
+            reader = csv.DictReader(file)
+            chaves = reader.fieldnames
             data = [row for row in reader]
-        return data
+        return data, chaves
+
+
 
     def write_csv(self, data):
         with open(self.filepath, mode='a', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file)
+            writer = csv.writer
             writer.writerow(data)
+            
+        

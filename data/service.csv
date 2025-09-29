@@ -1,4 +1,4 @@
-['nome'],['descricao'],['data_do_serviço]',['cliente'], ['valor']
+nome,descricao,data_do_serviço,cliente,valor
 Colocar uma lâmpada,Colocar uma lâmpada no quartinho do condomínio Rebeca,2025-09-29,Condomínio Rebeca,50.0
 Service,Teste,2025-09-23,cliente teste,0.0
 Service,Teste,2025-09-23,Cliente,0.0
