@@ -9,7 +9,7 @@ filcsv = FileCSV()
 data, chaves = filcsv.read_csv()
 tchaves = tuple()
 for c in chaves:
-    # nome das colunas do csv
+    # nome das colunas do csv em uma tupla
     tchaves += (c,)
 for p,r in enumerate(data):
     print(f'{r}')
