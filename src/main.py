@@ -6,7 +6,8 @@ filcsv = FileCSV()
 
 # data é uma lista de dicionários
 # chaves é uma lista com o nome das colunas
-data, chaves = filcsv.read_csv()
+data = filcsv.read_csv()
+chaves = filcsv.get_chaves()
 tchaves = tuple()
 for c in chaves:
     # nome das colunas do csv em uma tupla
