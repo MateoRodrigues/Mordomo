@@ -1,22 +1,16 @@
 import tkinter as tk
 import tkinter.ttk as ttk
-from repository.filecsv import FileCSV
+from controllers.getcsv import GetCSV
 
-filcsv = FileCSV()
+gtcsv = GetCSV()
 
-# data é uma lista de dicionários
 # chaves é uma lista com o nome das colunas
-data = filcsv.read_csv()
-chaves = filcsv.get_chaves()
-tchaves = tuple()
-for c in chaves:
-    # nome das colunas do csv em uma tupla
-    tchaves += (c,)
+data = gtcsv.get_data()
 for p,r in enumerate(data):
     print(f'{r}')
 root = tk.Tk()
 tabela = ttk.Treeview(root)
-tabela["columns"] = tchaves
+tabela["columns"] = gtcsv.get_chaves()
 # Configurando os cabeçalhos das colunas
 tabela.heading("#0", text="", anchor=tk.W)
 tabela.heading("#1", text="Nome", anchor=tk.W)
