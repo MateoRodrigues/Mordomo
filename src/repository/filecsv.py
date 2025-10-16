@@ -3,8 +3,8 @@ from pathlib import Path
 
 class FileCSV:
    
-    def __init__(self):
-        self.filepath = Path(__file__).parent.parent.parent/'data'/'service.csv'
+    def __init__(self, filepath=Path(__file__).parent.parent.parent/'data'/'service.csv'):
+        self.filepath = filepath
 
     def read_csv(self):
         with open(self.filepath, mode='r', newline='', encoding='utf-8') as file:
