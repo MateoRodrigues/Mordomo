@@ -7,8 +7,8 @@ wheels/
 *.egg-info
 
 # Directory
-credentials/
-data/
+credentials\
+data\
 
 # Virtual environments
 .venv
