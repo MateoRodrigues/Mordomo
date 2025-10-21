@@ -8,7 +8,7 @@ wheels/
 
 # Directory
 credentials/
-data
+data/
 
 # Virtual environments
 .venv
