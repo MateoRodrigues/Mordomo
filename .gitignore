@@ -9,7 +9,7 @@ wheels/
 # Directory
 credentials/
 data/
-
+config/
 # Virtual environments
 .venv
 
