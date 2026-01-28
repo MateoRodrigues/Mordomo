@@ -5,7 +5,7 @@ class FileCSV:
     """ Esta classe é responsável por ler e escrever arquivos CSV.
      EXEMPLO DE USO:
         file_csv = FileCSV()
-        data, reader = file_csv.read_csv()
+        data = file_csv.read_csv()
         file_csv.write_csv(['novo', 'registro', 'csv'])"""
    
     def __init__(self, filepath=Path(__file__).parent.parent.parent/'data'/'service.csv'):
@@ -14,7 +14,6 @@ class FileCSV:
     def read_csv(self):
         with open(self.filepath, mode='r', newline='', encoding='utf-8') as file:
             reader = csv.DictReader(file)
-            #values = [row for row in csv.reader(file)]
             data = [row for row in reader]
         return data
 
