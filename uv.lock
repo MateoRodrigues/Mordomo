@@ -847,7 +847,7 @@ wheels = [
 ]
 
 [[package]]
-name = "visby"
+name = "workcontrol"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
