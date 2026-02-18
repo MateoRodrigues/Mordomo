@@ -5,7 +5,7 @@ from repository.filecsv import FileCSV
 
 @dataclass
 class Service:
-    name: str
+    name: str = "Unnamed Service"
     description: str = "No description provided"
     day_number: date = date.today()
     client: str = "No client assigned"
