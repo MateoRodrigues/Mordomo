@@ -13,4 +13,7 @@ config/
 .idea/
 # Virtual environments
 .venv
+# Keys
+.env
+
 
