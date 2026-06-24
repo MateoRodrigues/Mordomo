@@ -15,5 +15,5 @@ config/
 .venv
 # Keys
 .env
-
+*.json
 
