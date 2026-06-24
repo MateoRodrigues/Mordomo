@@ -16,4 +16,50 @@ config/
 # Keys
 .env
 *.json
+# Outros ambientes virtuais
+venv/
+env/
+ENV/
 
+# Variáveis de ambiente variações
+.env.local
+.env.production
+.env.development
+*.env
+
+# Logs
+*.log
+logs/
+
+# Banco de dados local
+*.sqlite3
+*.db
+
+# Sistema operacional
+.DS_Store        # Mac
+Thumbs.db        # Windows
+desktop.ini      # Windows
+
+# Chaves e certificados
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+
+# Streamlit específico
+.streamlit/secrets.toml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Coverage e testes
+.coverage
+htmlcov/
+.pytest_cache/
+
+# IDEs além do .idea
+.vscode/
+*.swp
+*.swo
