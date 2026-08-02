@@ -1,6 +1,5 @@
-# Workcontrol
-Controlador de fluxo de trabalho, seu principal **objetivo** é automatizar o **planejamento** das tarefas.
+# Mordomo
+## Objetivo
+Ser seu assistente digital em qualquer trabalho.
 
-# Fase do Projeto
-- Inicialmente o projeto é crudcsv pelo terminal.
 
