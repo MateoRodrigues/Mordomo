@@ -1,7 +1,7 @@
 [project]
-name = "WorkControl"
+name = "Mordomo"
 version = "0.1.0"
-description = "Add your description here"
+description = "Ser um assistente pessoal."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -9,4 +9,5 @@ dependencies = [
     "python-dotenv>=1.2.2",
     "rich>=14.2.0",
     "streamlit>=1.55.0",
+    "tinydb>=4.8.2",
 ]
