@@ -1,4 +1,4 @@
-# Python-generated files
+# Python
 __pycache__/
 *.py[oc]
 build/
@@ -6,60 +6,61 @@ dist/
 wheels/
 *.egg-info
 
-# Directory
-credentials/
-data/
-config/
-.idea/
-# Virtual environments
-.venv
-# Keys
-.env
-*.json
-# Outros ambientes virtuais
+# Ambientes virtuais
+.venv/
 venv/
 env/
 ENV/
 
-# Variáveis de ambiente variações
-.env.local
-.env.production
-.env.development
+# Segredos
+.env
+.env.*
+!.env.example
 *.env
-
-# Logs
-*.log
-logs/
-
-# Banco de dados local
-*.sqlite3
-*.db
-
-# Sistema operacional
-.DS_Store        # Mac
-Thumbs.db        # Windows
-desktop.ini      # Windows
-
-# Chaves e certificados
+credentials/
+*credentials*.json
+*service-account*.json
+*serviceAccount*.json
+firebase*.json
 *.pem
 *.key
 *.cert
 *.p12
 *.pfx
 
-# Streamlit específico
-.streamlit/secrets.toml
+# Dados locais
+/data/
+*.db
+*.sqlite
+*.sqlite3
 
-# Jupyter Notebook
-.ipynb_checkpoints/
-*.ipynb
+# Chainlit
+.files/
+.chainlit/translations/
 
-# Coverage e testes
+# Logs
+*.log
+logs/
+
+# Testes e caches
 .coverage
 htmlcov/
 .pytest_cache/
+.ruff_cache/
+.mypy_cache/
 
-# IDEs além do .idea
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Editores
+.idea/
 .vscode/
 *.swp
 *.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
